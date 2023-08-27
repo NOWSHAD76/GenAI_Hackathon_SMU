@@ -35,7 +35,7 @@ Question: {input}
 prompt = get_prompt(template)
 
 # Initiate our LLM - default is 'gpt-3.5-turbo'
-llm = ChatOpenAI(temperature=0,openai_api_key="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")
+llm = ChatOpenAI(temperature=0,openai_api_key="insert_the_key")
 
 # LLM chain consisting of the LLM and a prompt
 llm_chain = LLMChain(llm=llm, prompt=prompt)

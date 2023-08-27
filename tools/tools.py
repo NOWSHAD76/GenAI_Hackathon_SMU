@@ -63,7 +63,7 @@ def get_tools():
         Citation: {citation}
         """
         prompt = PromptTemplate(template=template, input_variables=["citation"])
-        llm_chain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0,openai_api_key="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"), verbose=False)
+        llm_chain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0,openai_api_key="insert_the_key"), verbose=False)
         res = llm_chain.run(citation)
         return res
 
